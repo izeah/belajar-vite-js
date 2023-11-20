@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Vite JS</title>
+    <style>
+      @import url("./style.css");
+      @import url("./sample.scss");
+    </style>
+  </head>
+  <body>
+    <h1>Izeah Universe</h1>
+    <h3>Hellow ...</h3>
+    <script type="module">
+      import { isEven, sayGoodbye } from "./hello.ts";
+      import { v4 } from "uuid";
+      import * as person from "./person.json";
+      import textFile from "./dummy.txt?raw";
+      console.log("Hello Vite");
+      console.log("Hello World");
+
+      console.log("Apakah Ganjil ? ", isEven(4));
+      sayGoodbye("Izeah");
+      console.info(v4());
+      console.log(person);
+      console.log(textFile);
+    </script>
+  </body>
+</html>
